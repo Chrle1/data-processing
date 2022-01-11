@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title Goes Here</title>
+     <title>form template</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/forms.css" />
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1>form template</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
             <a href="#" target="_blank">Name of project goes here</a>
@@ -19,9 +20,57 @@
      </header>
      
    <main class="wrapper">
-  
-       <h2 class="subheader">Title Goes Here</h2>
-        <p>Content goes here</p>
+    <form method="get" action="" class="main-form">
+        <div>
+            <label for="First Name">First Name</label>:<br />
+            <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required="required" title="First Name is required" />
+        </div>
+        <div>
+            <label for="Last Name">Last Name</label>:<br />
+            <input type="text" name="LastName" id="LastName" placeholder="Last Name" required="required" title="Last Name is required" />
+        </div>
+        <div>
+            <label for="Email">Email</label>:<br />
+            <input type="text" name="Email" id="Email" placeholder="Email" required="required" title="Email is required" />
+        </div>
+        <div>
+            <label for="Address">Address</label>:<br />
+            <input type="text" name="Address" id="Address" placeholder="Address Here" required="required" title="Address is required" />
+        </div>
+        <div>
+            <label for="State">State</label>:<br />
+            <select name="State" id="State" required="required">
+                <option value="">Please Select Your State</option>
+                <option value= "AK">Alaska</option>
+                <option value= "OR">Oregon</option>
+                <option value= "CA">California</option>
+                <option value= "WA">Washington</option>
+
+
+            </select>
+        </div>
+        <div>
+            <fieldset>
+               <legend>Would you like to join our mailing list?</legend> 
+               <label><input type="radio" name="JoinMailingList" value="Yes" /> Yes</label><br />
+               <label><input type="radio" name="JoinMailingList" value="No" /> No</label>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+               <legend>What are you interested in?</legend> 
+               <label><input type="checkbox" name="InterestedIn" value="Website" /> Website</label><br />
+               <label><input type="checkbox" name="InterestedIn" value="OnlineCalendar" /> Online Calendar</label><br />
+               <label><input type="checkbox" name="InterestedIn" value="ContactForm" /> Contact Form</label><br />
+               <label><input type="checkbox" name="InterestedIn" value="OnlineCalendar" /> Sleep</label><br />
+            </fieldset>
+        </div>
+        <div>
+            <label for="Address">Comments</label>:<br />
+            <textarea name="Comments" placeholder="Your opinion is important to us" cols="36" rows="4"></textarea>
+        </div>
+        <div><input type="submit" value="Submit" /></div>
+    </form>
      <footer>
       <p><small>&copy; 2021 by 
           YOUR NAME HERE, All Rights Reserved ~ 
